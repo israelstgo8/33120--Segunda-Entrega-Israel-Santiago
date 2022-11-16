@@ -34,6 +34,7 @@ p,
 ul,
 a {
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -137,7 +138,10 @@ i {
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
-    
+}
+.title-promocines{
+    background-color: var(--clr--negro);
+   color: var(--clr--blanco);
 }
 .titel-pages{
     padding: .7rem;
@@ -189,6 +193,14 @@ i {
     line-height: 1.2rem;
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+    .card-title{
+        font-size: 1.3rem;
+    }
+}
+        
+
 
 .card-text {
     color: var(--clr--azul);
@@ -249,7 +261,7 @@ i {
             /* CSS RESPONSIBE */
 /* **************************************** */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 779px) {
 
     /* ----------Header-Desktop----------*/
     #cont-header {
@@ -299,9 +311,9 @@ i {
     #menu-desktop {
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center;  */
         background-color: var(--clr--azul);
-        height: 60px;
+        height: auto;
         border-bottom: solid 6px var(--clr--negro);
     }
 
@@ -317,18 +329,89 @@ i {
         cursor: pointer;
         transition: all 80ms;
     }
+    #menu-desktop .cont__menu a {
+        padding-inline: 1.1rem;
+        padding-block: 1rem;
+        cursor: pointer;
+        transition: all 80ms;
+    }
 
     #menu-desktop .cont__menu li:hover {
         background-color: var(--clr--negro);
         color: var(--clr--blanco);
-        /* background: linear-gradient(50deg, rgba(0, 0, 0, 0.911), #011e53f6); */
         border-left: 2px solid var(--clr--blanco);
-        /*  box-shadow: 2px 2px 3px var(--clr--negro); */
-        /* border-radius: 2px 0px; */
-    }
-    /* ----------Banner-Idex-Desktop----------*/
+   }
+    #menu-desktop>.cont__menu a:hover {
+        background-color: var(--clr--negro);
+        color: var(--clr--blanco);
+        }
 
+    /* ----------Banner-Idex-Desktop----------*/
+    .cont-banner{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+        padding: 10rem;
+        background-image: url(../img/banner/Wireframe_Proyecto_Franco.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        gap: 1rem;
+        color: var(--clr--blanco);
+    }
+    .cont-banner i{
+        font-size: 2rem;
+    }
+    .banner-body{
+        margin-bottom: 1rem;
+    }
+    
+    .banner-body>h2{
+        margin-bottom: .5rem;
+    }
+    .banner-body>p {
+        font-size: 1.3rem;
+    }
     /* ----------Card-Idex-Desktop----------*/
+    .cont-index-card{
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background-color: #E6E6E6;
+        
+    }
+    .cards-idex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .card-index{
+        flex-direction: row;
+        color: var(--clr--blanco);
+        max-width: 1200px;
+        align-items: stretch;
+    }
+    .card-col-img{
+        background-image: url(../img/img_index/index1.jpg);
+        flex: 1;
+        order: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .card-col-text{
+        
+        order: 0;
+        flex: 2;
+    }
+    .card-text-body{
+        /* padding: 1rem; */
+    }
+    .card-title{
+    }
     /* ----------Footer-Desktop----------*/
     #footer{
         
