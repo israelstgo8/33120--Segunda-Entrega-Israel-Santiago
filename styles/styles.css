@@ -330,7 +330,7 @@ i {
     }
 
     #menu-desktop .cont__menu li {
-        padding-inline: 1.1rem;
+        /* padding-inline: 1.1rem; */
         padding-block: 1rem;
         cursor: pointer;
         transition: all 80ms;
