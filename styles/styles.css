@@ -116,6 +116,11 @@ i {
 #menu-desktop {
     display: none;
 }
+.titel-contacto{
+    background-color: var(--clr--azul);
+    color: var(--clr--blanco);
+    
+}
 /* ----------Banner-Mobile----------*/
 .cont-banner {
     display: flex;
