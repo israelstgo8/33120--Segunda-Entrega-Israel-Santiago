@@ -42,7 +42,7 @@ img {
 }
 
 a,
-li {
+i {
     color: var(--clr--blanco);
     text-decoration: none;
 }
@@ -101,8 +101,6 @@ li {
     font-size: 1.1rem;
     padding: .3em;
 }
-/* ----------Menu-Mobile----------*/
-
 .menu-mobile {
     display: flex;
     flex-direction: column;
@@ -115,50 +113,15 @@ li {
 .menu-mobile .list i {
     font-size: 2.5em;
 }
-  .cont__menu.activo {
-      display: none;
-  }
-@media screen and (max-width: 778px){
-  
-    #menu-desktop{
-        display: flex;
-        justify-content: center;
-    }
-    
-    #menu-desktop{
-      background-color: var(--clr--azul);
-      padding-bottom: .5rem;
-    }
-    #menu-desktop ul {
-        width: 100%;
-    }
-    #menu-desktop ul li {
-       list-style: none;
-        background-color: var(--clr--negro);
-        padding-left: 1rem;
-        border-bottom: .1em solid var(--clr--blanco);
-       
-    }
-        #menu-desktop ul li:hover {
-            background-color: var(--clr--azul);
-           
-        }
-    #menu-desktop ul li:nth-child(5){
-       
-    }
-    #menu-desktop ul li a{
-        display: block;
-       padding-left: 1rem;
-       padding-block: 1rem; 
-    }
-    #menu-desktop ul li a:hover {
-        display: block;
-        padding-left: 1rem;
-        padding-block: 1rem;
-        color: var(--clr--blanco);
-         }
+#menu-desktop {
+    display: none;
 }
-
+.titel-contacto{
+    background-color: var(--clr--azul);
+    color: var(--clr--blanco);
+    font-size: 1.2rem;
+    784
+}
 /* ----------Banner-Mobile----------*/
 .cont-banner {
     display: flex;
@@ -242,6 +205,9 @@ li {
         font-size: 1.3rem;
     }
 }
+        
+
+
 .card-text {
     color: var(--clr--azul);
     text-align: justify;
