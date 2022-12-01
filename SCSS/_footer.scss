@@ -1,0 +1,88 @@
+/* ----------Footer-Mobile----------*/
+#footer {
+    & .cont-footer {
+        & .footer-logo {
+            display: none;
+        }
+    &  .foter-sociales {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+            & .footer-icon {
+                background-color: map-get($color, "azul" );
+                text-align: center;
+                padding-block: 1.2rem;
+                transition: 500ms all;
+                & i {
+                    padding-block: .4em;
+                    padding-inline: .6em;
+                    background-color: map-get($color, "blanco");
+                    border-radius: .3rem;
+                    font-size: 1.6rem;
+                    color: map-get($color, "azul")
+                }
+                
+            }
+            .footer-icon:hover {
+                @include icon-box();
+               
+                & i:hover{
+                    box-shadow: map-get($color , "negro" ) 2px 2px 3.6px;
+                }
+           }
+    }
+}
+    & .footer-copy{
+        background-color: map-get($color, "negro");
+        color: map-get($color, "blanco");
+        padding-block: .5rem;
+        padding-inline: .2rem;
+        text-align: center;
+        font-size: .57rem;
+    }
+}
+
+@media screen and (min-width: 779px){
+    #footer {
+        & .cont-footer {
+            padding-inline: 1rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: map-get($color, "azul"); 
+            & .footer-logo {
+                    display: flex;
+                    max-width: 150px;
+                    padding-block: 1rem;
+                    align-items: center;
+                    margin-right: 1rem;
+                    /* border: solid; */
+                }
+                .foter-sociales {
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    & i{
+                        padding-block: .5rem;
+                    }
+                }
+        }
+        .footer-copy {
+            font-size: .9rem;
+        }
+    }
+}
+
+.titel-contacto {
+    background-color: var(--clr--azul);
+    color: var(--clr--blanco);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+}
+
+
+
+
+
+

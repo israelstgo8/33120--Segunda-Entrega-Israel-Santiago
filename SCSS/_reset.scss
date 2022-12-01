@@ -1,0 +1,36 @@
+//Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+li {
+    color: map-get($color, "blanco");
+    text-decoration: none;
+}
+#cont-index {
+    background-color: map-get($color , "cartas" );
+}

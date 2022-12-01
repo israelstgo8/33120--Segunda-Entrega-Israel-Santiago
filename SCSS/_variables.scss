@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+$color:(
+    "negro": #000000,
+    "azul": #1F3B70,
+    "amarillo": #FFFF00,
+    "blanco": #FFFFFF,
+    "cartas": #E6E6E6,
+    "fondocard": #EFF3FB,
+     "bg-icon" : #021538,
+);
+
+@mixin titulosP() {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+}
+
+@mixin titulosS() {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+    color: map-get($color, "azul");
+}
+@mixin parrafos() {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.2rem;
+    color: map-get($color, "azul");
+}
+
+@mixin box-titulos-paginas () {
+    background-color: map-get($color, "amarillo");
+    box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;   
+}
+@mixin titulos-pag-mobile(){
+    padding: .7rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+@mixin icon-box (){
+    background-color: map-get($color,"bg-icon");
+    border-left: .5em solid map-get($color, "negro");
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}

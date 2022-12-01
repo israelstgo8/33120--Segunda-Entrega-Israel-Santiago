@@ -1,0 +1,487 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a,
+li {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#cont-index {
+  background-color: #E6E6E6;
+}
+
+#cont-header {
+  padding: 1rem;
+  background-color: #000000;
+  border-bottom: 0.4em solid #1F3B70;
+}
+#cont-header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#cont-header .header .header-central {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem;
+}
+#cont-header .header .header-central .header-logo {
+  max-width: 100%;
+  text-align: center;
+}
+#cont-header .header .header-central .header-logo .logo {
+  max-width: 100%;
+  padding: 0.1rem;
+}
+#cont-header .header .header-central .header-slogan {
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+#cont-header .header .header-central .header-slogan h1 {
+  font-size: 1em;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+}
+#cont-header .header .header-red-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.2rem;
+  width: auto;
+}
+#cont-header .header .header-red-social i {
+  font-size: 1.1rem;
+  padding: 0.3em;
+}
+#cont-header .header .menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: -1;
+}
+#cont-header .header .menu-mobile .list {
+  padding: 0.4rem;
+}
+#cont-header .header .menu-mobile .list i {
+  font-size: 2.5em;
+}
+
+.cont__menu.activo {
+  display: none;
+}
+
+#menu-desktop {
+  display: none;
+}
+@media screen and (max-width: 778px) {
+  #menu-desktop {
+    display: flex;
+    justify-content: center;
+    background-color: #1F3B70;
+    padding-bottom: 0.5rem;
+  }
+  #menu-desktop ul {
+    width: 100%;
+  }
+  #menu-desktop ul li {
+    list-style: none;
+    background-color: #000000;
+    padding-left: 1rem;
+    border-bottom: 0.1em solid #FFFFFF;
+  }
+  #menu-desktop ul li a {
+    display: block;
+    padding: 1rem;
+  }
+  #menu-desktop ul li a:hover {
+    color: #FFFFFF;
+  }
+  #menu-desktop ul li:hover {
+    background-color: #1F3B70;
+  }
+}
+
+@media screen and (min-width: 779px) {
+  /* ----------Header-Desktop----------*/
+  #cont-header {
+    border: 0;
+  }
+  #cont-header .header {
+    margin-inline: 1rem;
+    gap: 1rem;
+  }
+  #cont-header .header .header-central {
+    width: 85%;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  #cont-header .header .header-central .header-slogan {
+    margin: 0 auto;
+  }
+  #cont-header .header .header-central .header-slogan h1 {
+    font-size: 1.8rem;
+  }
+  #cont-header .header .header-central .header-slogan .header-slogan-img {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  #cont-header .header .header-red-social {
+    flex-direction: row;
+    width: 15%;
+    gap: 1rem;
+    align-items: center;
+  }
+  #cont-header .header .header-red-social i {
+    font-size: 1.3rem;
+  }
+  #cont-header .header .menu-mobile {
+    display: none;
+  }
+  /* ----------Menú-Desktop----------*/
+  #menu-desktop {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    background-color: #1F3B70;
+    height: auto;
+    border-bottom: solid 6px #000000;
+  }
+  #menu-desktop .cont__menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  #menu-desktop .cont__menu li {
+    /* padding-inline: 1.1rem; */
+    padding-block: 1rem;
+    cursor: pointer;
+    transition: all 80ms;
+  }
+  #menu-desktop .cont__menu li a {
+    padding-inline: 1.1rem;
+    padding-block: 1rem;
+    cursor: pointer;
+    transition: all 80ms;
+  }
+  #menu-desktop .cont__menu li:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+  }
+  #menu-desktop .cont__menu a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+}
+/* ----------Footer-Mobile----------*/
+#footer .cont-footer .footer-logo {
+  display: none;
+}
+#footer .cont-footer .foter-sociales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#footer .cont-footer .foter-sociales .footer-icon {
+  background-color: #1F3B70;
+  text-align: center;
+  padding-block: 1.2rem;
+  transition: 500ms all;
+}
+#footer .cont-footer .foter-sociales .footer-icon i {
+  padding-block: 0.4em;
+  padding-inline: 0.6em;
+  background-color: #FFFFFF;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  color: #1F3B70;
+}
+#footer .cont-footer .foter-sociales .footer-icon:hover {
+  background-color: #021538;
+  border-left: 0.5em solid #000000;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#footer .cont-footer .foter-sociales .footer-icon:hover i:hover {
+  box-shadow: #000000 2px 2px 3.6px;
+}
+#footer .footer-copy {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-block: 0.5rem;
+  padding-inline: 0.2rem;
+  text-align: center;
+  font-size: 0.57rem;
+}
+
+@media screen and (min-width: 779px) {
+  #footer .cont-footer {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F3B70;
+  }
+  #footer .cont-footer .footer-logo {
+    display: flex;
+    max-width: 150px;
+    padding-block: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+    /* border: solid; */
+  }
+  #footer .cont-footer .foter-sociales {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #footer .cont-footer .foter-sociales i {
+    padding-block: 0.5rem;
+  }
+  #footer .footer-copy {
+    font-size: 0.9rem;
+  }
+}
+.titel-contacto {
+  background-color: var(--clr--azul);
+  color: var(--clr--blanco);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+}
+
+/* ----------Banner-Mobile----------*/
+.cont-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+  padding: 1rem;
+  background-image: url(../img/banner/Wireframe_Proyecto_Franco.jpg);
+  background-size: cover;
+  text-align: center;
+  gap: 1rem;
+  color: #FFFFFF;
+}
+.cont-banner i {
+  font-size: 1.5rem;
+}
+.cont-banner .banner-body .titulo-banner {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  margin-bottom: 0.9rem;
+}
+.cont-banner .banner-body p {
+  margin-bottom: 0.5rem;
+}
+
+.cont-titel-pages {
+  background-color: #FFFF00;
+  box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+}
+.cont-titel-pages .titel-pages {
+  padding: 0.7rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.title-promocines {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* ----------Main-Mobile----------*/
+#main-index .cont-index-card .cards-idex {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+#main-index .cont-index-card .cards-idex .card-index {
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF3FB;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+#main-index .cont-index-card .cards-idex .card-index .card-col-img {
+  /* background-image: url(../img/img_index/index1.jpg);
+  background-size: cover; */
+  /*  padding: 9.5em; */
+  flex: 1;
+}
+#main-index .cont-index-card .cards-idex .card-index .card-col-img img {
+  width: 100%;
+  flex: 1;
+}
+#main-index .cont-index-card .cards-idex .card-index .card-col-text {
+  padding: 1.5rem;
+  height: 50%;
+  flex: 1;
+}
+#main-index .cont-index-card .cards-idex .card-index .card-col-text .card-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1F3B70;
+  margin-bottom: 1rem;
+}
+#main-index .cont-index-card .cards-idex .card-index .card-col-text .card-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.2rem;
+  color: #1F3B70;
+  margin-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+.card-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1F3B70;
+}
+
+.card-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.2rem;
+  color: #1F3B70;
+}
+
+/* **************************************** */
+/* CSS RESPONSIBE */
+/* **************************************** */
+@media screen and (min-width: 779px) {
+  .cont-banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    padding: 10rem;
+    background-image: url(../img/banner/Wireframe_Proyecto_Franco.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    gap: 1rem;
+    color: #FFFFFF;
+  }
+  .cont-banner i {
+    font-size: 2rem;
+  }
+  .cont-banner .banner-body {
+    margin-bottom: 1rem;
+  }
+  .cont-banner .banner-body > h2 {
+    margin-bottom: 0.5rem;
+  }
+  .cont-banner .banner-body > p {
+    font-size: 1.5rem;
+  }
+  #main-index .cont-index-card {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #E6E6E6;
+  }
+  #main-index .cont-index-card .cards-idex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #main-index .cont-index-card .cards-idex .card-index {
+    flex-direction: row;
+    /* color: var(--clr--blanco); */
+    max-width: 1200px;
+    align-items: stretch;
+  }
+  #main-index .cont-index-card .cards-idex .card-index .card-col-img {
+    /* background-image: url(../img/img_index/vison.png); */
+    /* flex: 1;
+    order: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto; */
+    flex: 1;
+  }
+  #main-index .cont-index-card .cards-idex .card-index .card-col-img img {
+    width: 100%;
+  }
+  #main-index .cont-index-card .cards-idex .card-index .card-col-text {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.2rem;
+    color: #1F3B70;
+    font-size: 1.2rem;
+    margin-block: auto;
+    order: 0;
+    flex: 1;
+  }
+}
+.titel-contacto {
+  background-color: #1F3B70;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+}
+
+.cards-servicio {
+  background-color: #EFF3FB;
+}
+
+.btn-cont {
+  padding-inline: 3rem;
+  background-color: #1F3B70;
+  color: #FFFFFF;
+}
+
+.btn-cont:hover {
+  background-color: #1F3B70;
+  color: #FFFFFF;
+  box-shadow: rgba(33, 35, 38, 0.8) 0px 10px 10px -10px;
+  border-bottom: solid 2px #E6E6E6;
+}/*# sourceMappingURL=main.css.map */
