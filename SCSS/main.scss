@@ -5,6 +5,7 @@
 @import'header';
 @import 'footer';
 
+
 /* ----------Banner-Mobile----------*/
 .cont-banner{
     display: flex;
@@ -32,8 +33,6 @@
         }
     }
 }
-
-
 //....Titles....
 .cont-titel-pages {
    @include box-titulos-paginas();
@@ -45,6 +44,7 @@
     background-color: map-get($color, "negro" );
     color: map-get($color, "blanco");
 }
+
 /* ----------Main-Mobile----------*/
 #main-index {
     .cont-index-card {
@@ -88,14 +88,22 @@
       }
 }
 
+.img-contacto {
+    display: none;
+}
+.form-contacto{
+  /*   background-color: map-get($color, "cartas"); */
+  border: none;
+  border-radius: 0;
+  
+}
+
 .card-title {
     @include titulosS();
 }
-
 .card-text {
     @include parrafos()
 }
-
 /* **************************************** */
             /* CSS RESPONSIBE */
 /* **************************************** */
@@ -157,6 +165,15 @@
             }
         }
     }
+    .img-contacto {
+        display: block;        
+        background-image: url(../img/img-contactanos/img-contactanos.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
+    }
+
 }
 
  

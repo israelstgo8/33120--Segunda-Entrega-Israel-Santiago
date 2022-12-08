@@ -336,9 +336,6 @@ li {
   border-radius: 1rem;
 }
 #main-index .cont-index-card .cards-idex .card-index .card-col-img {
-  /* background-image: url(../img/img_index/index1.jpg);
-  background-size: cover; */
-  /*  padding: 9.5em; */
   flex: 1;
 }
 #main-index .cont-index-card .cards-idex .card-index .card-col-img img {
@@ -372,6 +369,16 @@ li {
     font-size: 1.3rem;
   }
 }
+.img-contacto {
+  display: none;
+}
+
+.form-contacto {
+  /*   background-color: map-get($color, "cartas"); */
+  border: none;
+  border-radius: 0;
+}
+
 .card-title {
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -431,18 +438,10 @@ li {
   }
   #main-index .cont-index-card .cards-idex .card-index {
     flex-direction: row;
-    /* color: var(--clr--blanco); */
     max-width: 1200px;
     align-items: stretch;
   }
   #main-index .cont-index-card .cards-idex .card-index .card-col-img {
-    /* background-image: url(../img/img_index/vison.png); */
-    /* flex: 1;
-    order: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: auto; */
     flex: 1;
   }
   #main-index .cont-index-card .cards-idex .card-index .card-col-img img {
@@ -458,6 +457,14 @@ li {
     margin-block: auto;
     order: 0;
     flex: 1;
+  }
+  .img-contacto {
+    display: block;
+    background-image: url(../img/img-contactanos/img-contactanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
   }
 }
 .titel-contacto {
